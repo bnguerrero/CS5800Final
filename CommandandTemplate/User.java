@@ -5,7 +5,6 @@ public class User
     public String name;
     public String phoneNumber;
     public String email;
-    public Music music;
 
     public User(String name, String phoneNumber, String email)
     {
@@ -16,14 +15,18 @@ public class User
 
     public void makePhoneCall()
     {
-        System.out.println("Making phone call for " + name);
+        System.out.println(name + " making phone call ");
     }
     public void sendEmail()
     {
-        System.out.println("Sending email for "+ name);
+        System.out.println( email + " sending email");
     }
     public void playMusic(Music music)
     {
-       System.out.println("Playing" + music.getName() +  "for " + name);
+       System.out.println("Playing " + music.getName() +  " for " + name);
+    }
+    public void SetReminder(Reminder reminder)
+    {
+        System.out.println("Set reminder : " + reminder.content + " at: " + reminder.geTimeStamp());
     }
 }

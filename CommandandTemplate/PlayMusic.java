@@ -1,6 +1,6 @@
 package CS5800Final.CommandandTemplate;
 
-public class PlayMusic 
+public class PlayMusic implements Command
 {
     private User user;
     private Music music;

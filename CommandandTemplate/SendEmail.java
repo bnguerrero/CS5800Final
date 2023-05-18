@@ -1,6 +1,6 @@
 package CS5800Final.CommandandTemplate;
 
-public class SendEmail 
+public class SendEmail implements Command
 {
     private User user;
 
