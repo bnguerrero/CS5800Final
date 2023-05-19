@@ -2,18 +2,18 @@ package CS5800Final.CommandandTemplate;
 
 public class PlayMusic implements Command
 {
-    private User user;
+    private MusicPlayer musicPlayer;
     private Music music;
 
-    public PlayMusic(User user, Music music)
+    public PlayMusic(MusicPlayer musicPlayer, Music music)
     {
-        this.user = user;
+        this.musicPlayer = musicPlayer;
         this.music = music;
     }
 
     public void execute()
     {
-        user.playMusic(music);
+        musicPlayer.playMusic(music);
     }
 
 }

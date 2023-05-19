@@ -2,17 +2,17 @@ package CS5800Final.CommandandTemplate;
 
 public class SetReminder implements Command
 {
-    private User user;
+    private ReminderSetter reminderSetter;
     private Reminder reminder;
 
-    public SetReminder(User user, Reminder reminder)
+    public SetReminder(ReminderSetter reminderSetter, Reminder reminder)
     {
-        this.user = user;
+        this.reminderSetter = reminderSetter;
         this.reminder = reminder;
     }
 
     public void execute()
     {
-        user.SetReminder(reminder);
+        reminderSetter.SetReminder(reminder);
     }
 }

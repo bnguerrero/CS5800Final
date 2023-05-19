@@ -12,21 +12,16 @@ public class User
         this.phoneNumber = phoneNumber;
         this.email = email;
     }
-
-    public void makePhoneCall()
+    public String getName()
     {
-        System.out.println(name + " making phone call ");
+        return name;
     }
-    public void sendEmail()
+    public String getPhoneNumber()
     {
-        System.out.println( email + " sending email");
+        return phoneNumber;
     }
-    public void playMusic(Music music)
+    public String getEmail()
     {
-       System.out.println("Playing " + music.getName() +  " for " + name);
-    }
-    public void SetReminder(Reminder reminder)
-    {
-        System.out.println("Set reminder : " + reminder.content + " at: " + reminder.geTimeStamp());
+        return email;
     }
 }
