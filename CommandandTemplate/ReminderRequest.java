@@ -1,16 +1,16 @@
 package CS5800Final.CommandandTemplate;
 
-public class MusicRequest extends Request
+public class ReminderRequest extends Request
 {
     public void notifyUser(DigitalAssistant playMusic, User user, Music music)
     {
         if (validateUserRequest())
         {
-            System.out.println("Play music request validated.");
+            System.out.println("Reminder request validated.");
         }
         else
         {
-            System.out.println("Unable to fulfill play music request");
+            System.out.println("Unable to fulfill reminder request");
         }
     }
 }

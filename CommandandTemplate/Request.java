@@ -28,7 +28,6 @@ public abstract class Request
         if (validateUserRequest())
         {
             System.out.println("Request fulfilled");
-            logRequest();
         }
         else
         {

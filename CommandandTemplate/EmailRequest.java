@@ -2,13 +2,11 @@ package CS5800Final.CommandandTemplate;
 
 public class EmailRequest extends Request
 {
-    public void notifyUser(DigitalAssistant sendEmail, User user)
+    public void notifyUser()
     {
         if (validateUserRequest())
         {
             System.out.println("Email request validated.");
-            logRequest();
-            sendEmail.invoke(new SendEmail(null, user));
         }
         else
         {

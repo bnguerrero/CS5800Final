@@ -1,7 +1,16 @@
 package CS5800Final.CommandandTemplate;
 
+
 public class PhoneCallRequest extends Request 
 {
+
+    public void processing()
+    {
+        validateUserRequest();
+        logRequest();
+        notifyUser();
+    }
+
     public void notifyUser()
     {
         if (validateUserRequest())

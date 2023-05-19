@@ -17,18 +17,20 @@ public class Driver
         DigitalAssistant setReminder = new DigitalAssistant();
 
         PhoneCallRequest phoneCallRequest = new PhoneCallRequest();
+        EmailRequest emailRequest = new EmailRequest();
+        MusicRequest musicRequest = new MusicRequest();
+        ReminderRequest reminderRequest = new ReminderRequest();
         
         phoneCallRequest.processing();
-        
         makePhoneCall.invoke(new MakePhoneCall(phoneDialer, bri));
+
+        emailRequest.processing();
         sendEmail.invoke(new SendEmail(emailSender, bri));
+
+        musicRequest.processing();
         playMusic.invoke(new PlayMusic(musicPlayer, new Music("Song1", "Artist1", "Album1")));
+
+        reminderRequest.processing();
         setReminder.invoke(new SetReminder(reminderSetter, new Reminder("walk the dog", "2023-05-19 14:30:00")));
-       
-       
-       
-       
     }
-
-
 }
