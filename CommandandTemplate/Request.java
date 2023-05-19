@@ -3,6 +3,14 @@ package CS5800Final.CommandandTemplate;
 public abstract class Request 
 {
     boolean isValid = true;
+
+    public void processing()
+    {
+        validateUserRequest();
+        logRequest();
+        notifyUser();
+    }
+
     public boolean validateUserRequest()
     {
         if (!isValid) 
@@ -15,13 +23,12 @@ public abstract class Request
     {
         System.out.println("logged request.");
     }
-    public void notifyUser(User user, Command command)
+    public void notifyUser()
     {
         if (validateUserRequest())
         {
             System.out.println("Request fulfilled");
             logRequest();
-            command.execute();
         }
         else
         {
@@ -29,4 +36,5 @@ public abstract class Request
         }
         
     }
+
 }

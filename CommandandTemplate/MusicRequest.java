@@ -8,7 +8,6 @@ public class MusicRequest extends Request
         {
             System.out.println("Play music request validated.");
             logRequest();
-            playMusic.invoke(new PlayMusic(user, music));
         }
         else
         {

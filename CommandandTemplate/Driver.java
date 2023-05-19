@@ -15,6 +15,10 @@ public class Driver
         DigitalAssistant sendEmail = new DigitalAssistant();
         DigitalAssistant playMusic = new DigitalAssistant();
         DigitalAssistant setReminder = new DigitalAssistant();
+
+        PhoneCallRequest phoneCallRequest = new PhoneCallRequest();
+        
+        phoneCallRequest.processing();
         
         makePhoneCall.invoke(new MakePhoneCall(phoneDialer, bri));
         sendEmail.invoke(new SendEmail(emailSender, bri));
