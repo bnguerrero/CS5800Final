@@ -8,7 +8,7 @@ public class User {
 
     public User(String name, WeatherService weatherApp) {
         this.name = name;
-        this.weatherApp = weatherApp;
+        setWeatherApp(weatherApp);
     }
 
     public void update(PropertyChangeListener listener) {
@@ -26,5 +26,9 @@ public class User {
 
     public WeatherService getWeatherApp() {
         return weatherApp;
+    }
+
+    public void notifyWeatherUpdate(WeatherData weatherData) {
+        System.out.println("Weather data for " + name + ": " + weatherData);
     }
 }

@@ -1,0 +1,14 @@
+Weather data for John: Location: Pomona, US
+Temperature: 69.0°F
+Humidity: 71.0%
+Weather Condition: haze
+
+Weather data for Bob: Location: San Francisco, US
+Temperature: 53.06°F
+Humidity: 93.0%
+Weather Condition: Cloudy
+
+Weather data for Bryan: Location: Hoboken, NJ
+Temperature: 59.0°F
+Humidity: 83.0%
+Weather Condition: A slight chance of rain showers after 2am. Mostly cloudy, with a low around 59. Southeast wind 5 to 8 mph. Chance of precipitation is 20%.
